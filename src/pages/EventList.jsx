@@ -26,16 +26,28 @@ const [searchTerm, setSearchTerm] = useState("");
   }, []);
 
   if (loading) {
-    return (
-      <div className="container mt-5 text-center">
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        width: "100vw",
+      }}
+    >
+      <div style={{ textAlign: "center" }}>
         <div className="spinner-border text-danger" role="status"></div>
-        <h5 className="mt-3">Loading events...</h5>
+        <p style={{ marginTop: "10px" }}>Loading events...</p>
       </div>
-    );
+    </div>
+  );
+}
+
 
     
 
-  }
+  
 // const filteredEvents =
 //   selectedType === "All"
     // ? events
@@ -80,7 +92,7 @@ let filteredEvents = filterBySearch(filterByType(events));
     <div className="container-fluid px-0">
     {/* Navbar */}
 <nav className="navbar navbar-expand-lg bg-dark border-bottom navbar-dark">
-  <div className="container-fluid px-0 ">
+  <div className="container-fluid px-4 ">
 
     {/* Logo */}
     <Link className="navbar-brand fw-bold text-danger" to="/">
