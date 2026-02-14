@@ -80,7 +80,7 @@ let filteredEvents = filterBySearch(filterByType(events));
     <div className="container-fluid px-5 mt-5">
     {/* Navbar */}
 <nav className="navbar navbar-expand-lg bg-dark border-bottom navbar-dark">
-  <div className="container-fluid px-4 ">
+  <div className="container-fluid px-0 ">
 
     {/* Logo */}
     <Link className="navbar-brand fw-bold text-danger" to="/">
