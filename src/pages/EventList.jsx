@@ -11,7 +11,7 @@ const [searchTerm, setSearchTerm] = useState("");
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/")
+    fetch("https://meet-up-app-weld.vercel.app/")
       .then((res) => res.json())
       .then((data) => {
         // Since your backend might return an array or object, 

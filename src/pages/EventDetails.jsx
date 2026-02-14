@@ -8,7 +8,7 @@ const EventDetails = () => {
   const { meetId } = useParams();
 
   useEffect(() => {
-  fetch(`http://localhost:3000/meetups/${meetId}`)
+  fetch(`https://meet-up-app-weld.vercel.app/meetups/${meetId}`)
     .then(res => res.json())
     .then(data => {
       setEvent(data);  

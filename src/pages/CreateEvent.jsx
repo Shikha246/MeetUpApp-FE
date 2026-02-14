@@ -78,7 +78,7 @@ const CreateEvent = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/create", {
+      const response = await fetch("https://meet-up-app-weld.vercel.app/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
