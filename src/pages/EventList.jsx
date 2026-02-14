@@ -77,7 +77,7 @@ const filterBySearch = (events) => {
 let filteredEvents = filterBySearch(filterByType(events));
 
   return (
-    <div className="container-fluid px-5 mt-5">
+    <div className="container-fluid px-0">
     {/* Navbar */}
 <nav className="navbar navbar-expand-lg bg-dark border-bottom navbar-dark">
   <div className="container-fluid px-0 ">
