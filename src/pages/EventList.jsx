@@ -89,10 +89,10 @@ const filterBySearch = (events) => {
 let filteredEvents = filterBySearch(filterByType(events));
 
   return (
-    <div className="container-fluid px-0">
+    <div className="container-fluid">
     {/* Navbar */}
 <nav className="navbar navbar-expand-lg bg-dark border-bottom navbar-dark">
-  <div className="container-fluid px-4 ">
+  <div className="container-fluid">
 
     {/* Logo */}
     <Link className="navbar-brand fw-bold text-danger" to="/">
@@ -148,13 +148,14 @@ let filteredEvents = filterBySearch(filterByType(events));
           <option value="offline">offline</option>
           
         </select>
-
+</div>
       </div>
     </div>
-  </div>
+ 
 </nav>
+<div className="container py-4">
+      <div className="d-flex justify-content-between align-items-center m-4">
 
-      <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Upcoming Meetups</h2>
       </div>
 
@@ -200,10 +201,14 @@ let filteredEvents = filterBySearch(filterByType(events));
               </div>
             </div>
           </div>
+
         ))}
       </div>
     </div>
+  </div>
   );
+
 };
+   
 
 export default EventList;
